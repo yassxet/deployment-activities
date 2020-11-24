@@ -15,7 +15,7 @@ app.get("/", (request, response) => {
 });
 
 // send the default array of dreams to the webpage
-app.get("/dreams", (request, response) => {
+app.get("/test", (request, response) => {
     let parsedBody = JSON.parse(request.body);
   response.send("popoo"+parsedBody);
 });
