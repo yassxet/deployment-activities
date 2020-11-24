@@ -15,13 +15,12 @@ app.get("/", (request, response) => {
 });
 
 // send the default array of dreams to the webpage
-app.get("/test", (request, response) => {
+/*app.get("/test", (request, response) => {
     let parsedBody = JSON.parse(request.body);
   response.send("popoo"+parsedBody);
-});
+});*/
 
 app.get("/yes", (request, response) => {
-    let parsedBody = JSON.parse(request.body);
   response.send("yes");
 });
 
