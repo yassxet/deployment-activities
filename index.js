@@ -20,6 +20,11 @@ app.get("/test", (request, response) => {
   response.send("popoo"+parsedBody);
 });
 
+app.get("/yes", (request, response) => {
+    let parsedBody = JSON.parse(request.body);
+  response.send("yes");
+});
+
 // listen for requests :)
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
